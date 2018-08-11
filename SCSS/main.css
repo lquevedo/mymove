@@ -1,0 +1,1217 @@
+/*! normalize.css v1.1.0 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address styling not present in IE 7/8/9, Firefox 3, and Safari 4.
+ * Known issue: no IE 6 support.
+ */
+[hidden] {
+  display: none;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/**
+ * 1. Correct text resizing oddly in IE 6/7 when body `font-size` is set using
+ *    `em` units.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+  font-size: 100%;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Address `font-family` inconsistency between `textarea` and other form
+ * elements.
+ */
+html,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif;
+}
+
+/**
+ * Address margins handled incorrectly in IE 6/7.
+ */
+body {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+a:focus {
+  outline: thin dotted;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/**
+ * Address font sizes and margins set differently in IE 6/7.
+ * Address font sizes within `section` and `article` in Firefox 4+, Safari 5,
+ * and Chrome.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin: 0.83em 0;
+}
+
+h3 {
+  font-size: 1.17em;
+  margin: 1em 0;
+}
+
+h4 {
+  font-size: 1em;
+  margin: 1.33em 0;
+}
+
+h5 {
+  font-size: 0.83em;
+  margin: 1.67em 0;
+}
+
+h6 {
+  font-size: 0.67em;
+  margin: 2.33em 0;
+}
+
+/**
+ * Address styling not present in IE 7/8/9, Safari 5, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 3+, Safari 4/5, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold;
+}
+
+blockquote {
+  margin: 1em 40px;
+}
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ * Known issue: no IE 6/7 normalization.
+ */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Address styling not present in IE 6/7/8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Address margins set differently in IE 6/7.
+ */
+p,
+pre {
+  margin: 1em 0;
+}
+
+/**
+ * Correct font family set oddly in IE 6, Safari 4/5, and Chrome.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  _font-family: "courier new", monospace;
+  font-size: 1em;
+}
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/**
+ * Address CSS quotes not supported in IE 6/7.
+ */
+q {
+  quotes: none;
+}
+
+/**
+ * Address `quotes` property not supported in Safari 4.
+ */
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* ==========================================================================
+   Lists
+   ========================================================================== */
+/**
+ * Address margins set differently in IE 6/7.
+ */
+dl,
+menu,
+ol,
+ul {
+  margin: 1em 0;
+}
+
+dd {
+  margin: 0 0 0 40px;
+}
+
+/**
+ * Address paddings set differently in IE 6/7.
+ */
+menu,
+ol,
+ul {
+  padding: 0 0 0 40px;
+}
+
+/**
+ * Correct list images handled incorrectly in IE 7.
+ */
+nav ul,
+nav ol {
+  list-style: none;
+  list-style-image: none;
+}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/**
+ * 1. Remove border when inside `a` element in IE 6/7/8/9 and Firefox 3.
+ * 2. Improve image quality when scaled in IE 7.
+ */
+img {
+  border: 0;
+  /* 1 */
+  -ms-interpolation-mode: bicubic;
+  /* 2 */
+}
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/**
+ * Address margin not present in IE 6/7/8/9, Safari 5, and Opera 11.
+ */
+figure {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/**
+ * Correct margin displayed oddly in IE 6/7.
+ */
+form {
+  margin: 0;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct color not being inherited in IE 6/7/8/9.
+ * 2. Correct text not wrapping in Firefox 3.
+ * 3. Correct alignment displayed oddly in IE 6/7.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  white-space: normal;
+  /* 2 */
+  *margin-left: -7px;
+  /* 3 */
+}
+
+/**
+ * 1. Correct font size not being inherited in all browsers.
+ * 2. Address margins set differently in IE 6/7, Firefox 3+, Safari 5,
+ *    and Chrome.
+ * 3. Improve appearance and consistency in all browsers.
+ */
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+  vertical-align: baseline;
+  /* 3 */
+  *vertical-align: middle;
+  /* 3 */
+}
+
+/**
+ * Address Firefox 3+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+button,
+input {
+  line-height: normal;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 6+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ * 4. Remove inner spacing in IE 7 without affecting normal text inputs.
+ *    Known issue: inner spacing remains in IE 6.
+ */
+button,
+html input[type=button],
+input[type=reset],
+input[type=submit] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+  *overflow: visible;
+  /* 4 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * 1. Address box sizing set to content-box in IE 8/9.
+ * 2. Remove excess padding in IE 8/9.
+ * 3. Remove excess padding in IE 7.
+ *    Known issue: excess padding remains in IE 6.
+ */
+input[type=checkbox],
+input[type=radio] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+  *height: 13px;
+  /* 3 */
+  *width: 13px;
+  /* 3 */
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type=search] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Remove inner padding and border in Firefox 3+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * 1. Remove default vertical scrollbar in IE 6/7/8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ==========================================================================
+   ALL PAGES
+   ========================================================================== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: white;
+}
+
+.index__nav {
+  height: 90px;
+  width: 1440px;
+  display: flex;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  position: absolute;
+  font-family: "RV Montserrat", sans-serif;
+}
+.index__nav .index__nav--logo {
+  padding: 28px 0 25px 38px;
+}
+.index__nav .index__nav--links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  list-style: none;
+}
+.index__nav .index__nav--links li {
+  padding: 20px;
+  font-size: 12px;
+}
+.index__nav .index__nav--links li a {
+  text-decoration: none;
+  color: white;
+  letter-spacing: 0.86px;
+  font-weight: 300;
+}
+.index__nav .index__nav--links li .nav__links--burger {
+  height: 49px;
+  width: 49px;
+}
+
+footer {
+  font-family: "RV Montserrat", sans-serif;
+  width: 100%;
+  height: 367px;
+  background-color: #3949AB;
+}
+footer .footer__tophalf {
+  display: flex;
+}
+footer .footer__tophalf .footer__tophalf--links {
+  height: 165px;
+  width: 146px;
+  margin: 75px 923px 0px 144px;
+}
+footer .footer__tophalf .footer__tophalf--links > ul {
+  list-style: none;
+  padding: 0px;
+  width: 130px;
+  letter-spacing: 1.14px;
+  line-height: 33px;
+}
+footer .footer__tophalf .footer__tophalf--links > ul > li {
+  padding-bottom: 10px;
+}
+footer .footer__tophalf .footer__tophalf--links > ul > li a {
+  text-decoration: none;
+  color: white;
+}
+footer .footer__tophalf .footer__social--logo {
+  margin: 143px 45px 0px 0px;
+}
+footer .footer__tophalf .footer__social--links {
+  display: flex;
+  flex-direction: column;
+  width: 40px;
+  height: 208px;
+  margin: 75px 142px 0px 0px;
+}
+footer .footer__tophalf .footer__social--links img {
+  padding-bottom: 16px;
+}
+footer .footer__bottomhalf > ul {
+  list-style: none;
+  text-align: center;
+  margin-top: 35px;
+  font-size: 14px;
+}
+footer .footer__bottomhalf > ul > li {
+  display: inline-block;
+  padding: 0px 16px;
+  border-right: 1px solid white;
+  line-height: 24px;
+  font-weight: 100;
+}
+footer .footer__bottomhalf > ul > li a {
+  text-decoration: none;
+  color: white;
+}
+footer .footer__bottomhalf > ul .footer__bottomhalf--lastitem {
+  border: none;
+}
+
+/* ==========================================================================
+   INDEX PAGE
+   ========================================================================== */
+.index__hero {
+  height: 419px;
+  width: 1440px;
+  background: linear-gradient(rgba(63, 81, 181, 0.9), rgba(63, 81, 181, 0.9)), url(../images/hero.png);
+  font-family: "RV Montserrat", sans-serif;
+}
+.index__hero .index__hero--text {
+  text-align: center;
+  height: 161px;
+  padding-top: 110px;
+}
+.index__hero .index__hero--text > h1 {
+  font-size: 18px;
+  color: #FDD835;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.index__hero .index__hero--text > h2 {
+  font-size: 54px;
+  margin: 0;
+  font-weight: bold;
+}
+.index__hero .index__hero--text > p {
+  font-size: 16px;
+  margin-top: 33px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.index__subnav {
+  font-family: "RV Montserrat", sans-serif;
+  font-weight: normal;
+  letter-spacing: 0.75px;
+  width: 1147px;
+  height: 48px;
+  margin: 42px 135px 40px 158px;
+  color: #424242;
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+.index__subnav .index__subnav--links {
+  padding-left: 0;
+}
+.index__subnav .index__subnav--links li {
+  padding-left: 30px;
+  display: inline-block;
+  font-size: 13px;
+}
+.index__subnav .index__subnav--links li a {
+  text-decoration: none;
+  color: #424242;
+  letter-spacing: 0.75px;
+}
+.index__subnav .index__subnav--links .subnav__links--active {
+  border-bottom: 3px solid #303F9F;
+  padding: 0 6px 6px 6px;
+}
+.index__subnav .index__subnav--links .subnav__links--active > a {
+  color: #303F9F;
+}
+.index__subnav .index__contactbtn {
+  font-weight: 500;
+  letter-spacing: 0.24px;
+  height: 48px;
+  width: 178px;
+  background-color: #536DFE;
+  border-radius: 2px;
+  color: white;
+  font-size: 14px;
+  margin-left: 108px;
+}
+
+.main__article {
+  font-family: "RV Montserrat", sans-serif;
+  width: 1170px;
+  height: 500px;
+  box-shadow: 0px 0px 70px #c2c2c2;
+  display: flex;
+  margin: 40px 135px 0px;
+}
+.main__article .main__article--image {
+  background-image: url(../images/Bitmap.png);
+  width: 441px;
+  height: 441px;
+  margin: 30px 49px 29px 30px;
+  transition: transform 500ms ease;
+}
+.main__article .main__article--image:hover {
+  transform: scaleX(1.05) scaleY(1.05);
+}
+.main__article .main__article--content {
+  width: 608px;
+  height: 410px;
+  color: black;
+}
+.main__article .main__article--content a {
+  text-decoration: none;
+  color: black;
+}
+.main__article .main__article--content a :hover {
+  color: #536DFE;
+}
+.main__article .main__article--content a h2 {
+  font-size: 42px;
+  width: 536px;
+}
+.main__article .main__article--content > p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  line-height: 30px;
+  font-size: 18px;
+  margin: 0;
+}
+.main__article .main__article--content .main__article--pill {
+  height: 25px;
+  width: 92px;
+  background-color: white;
+  border-radius: 12px;
+  color: #3949AB;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #3949AB;
+  margin: 60px 0 15px 0;
+}
+.main__article .main__article--content .main__article--pill:hover {
+  background-color: #3949AB;
+  color: white;
+}
+.main__article .main__article--content .main__article--bottom {
+  margin-top: 30px;
+  border-top: 1px solid #ebebeb;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  padding-top: 25px;
+}
+.main__article .main__article--content .main__article--bottom .article__bottom--text {
+  display: flex;
+  flex-direction: column;
+  color: #424242;
+  font-size: 12px;
+  margin-left: 15px;
+}
+.main__article .main__article--content .main__article--bottom .article__bottom--text p {
+  margin: 0 0 10px 0;
+  font-size: 12px;
+  line-height: 24px;
+  height: 10px;
+  color: #757575;
+}
+.main__article .main__article--content .main__article--bottom .article__bottom--text p span {
+  font-weight: bold;
+  letter-spacing: 0.86px;
+  text-transform: uppercase;
+  color: #424242;
+}
+
+/* ==========================================================================
+   INDEX ARTICLES
+   ========================================================================== */
+.main__articles--row {
+  font-family: "RV Montserrat", sans-serif;
+  width: 1170px;
+  height: 549px;
+  display: flex;
+  margin-left: 135px;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.main__articles--row .articles__row--card {
+  box-shadow: 0px 0px 70px #c2c2c2;
+  width: 370px;
+  height: 549px;
+  transition: transform 500ms ease;
+}
+.main__articles--row .articles__row--card:hover {
+  transform: scaleX(1.05) scaleY(1.05);
+}
+.main__articles--row .articles__row--card .articles__card--image {
+  height: 190px;
+  width: 310px;
+  margin: 30px 30px 0px;
+}
+.main__articles--row .articles__row--card .articles__card--text {
+  width: 318px;
+  height: 176px;
+  margin: 30px auto 0px;
+}
+.main__articles--row .articles__row--card .articles__card--text .articles__card--pill {
+  height: 25px;
+  width: 92px;
+  background-color: white;
+  border-radius: 12px;
+  color: #3949AB;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #3949AB;
+  margin-bottom: 16px;
+}
+.main__articles--row .articles__row--card .articles__card--text .articles__card--pill:hover {
+  background-color: #3949AB;
+  color: white;
+}
+.main__articles--row .articles__row--card .articles__card--text h2 {
+  width: 308px;
+  font-size: 26px;
+  color: #424242;
+  margin: 0px 0px 10px 0px;
+  line-height: 34px;
+}
+.main__articles--row .articles__row--card .articles__card--text p {
+  font-size: 14px;
+  color: #424242;
+  line-height: 19px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.main__articles--row .articles__row--card .articles__card--bottom {
+  margin-top: 58px;
+  border-top: 1px solid #ebebeb;
+  height: 61px;
+  display: flex;
+  align-items: center;
+}
+.main__articles--row .articles__row--card .articles__card--bottom img {
+  margin-left: 26px;
+}
+.main__articles--row .articles__row--card .articles__card--bottom .articles__bottom--text {
+  display: flex;
+  flex-direction: column;
+  color: #424242;
+  font-size: 12px;
+  margin: 20px 0 0 15px;
+  height: 50px;
+}
+.main__articles--row .articles__row--card .articles__card--bottom .articles__bottom--text > span {
+  font-weight: bold;
+  letter-spacing: 0.86px;
+  text-transform: uppercase;
+  color: #424242;
+  margin: 0;
+}
+.main__articles--row .articles__row--card .articles__card--bottom .articles__bottom--text p {
+  font-size: 12px;
+  color: #757575;
+  margin: 0;
+  font-weight: 100;
+}
+
+hr {
+  position: absolute;
+  height: 1px;
+  width: 1171px;
+  margin: 100px 0px 0px 135px;
+  border: 0;
+  border-top: 1px solid #dddddd;
+  background: #424242;
+}
+
+.hr__break {
+  position: relative;
+  height: 48px;
+  width: 369px;
+  margin: 76px auto 94px;
+  background: white;
+  font-family: "RV Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.24px;
+}
+.hr__break .hr__button {
+  width: 249px;
+  height: 48px;
+  background-color: #536DFE;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+  text-transform: uppercase;
+  color: white;
+}
+
+/* ==========================================================================
+   SECOND PAGE
+   ========================================================================== */
+.second__nav {
+  height: 90px;
+  width: 1440px;
+  display: flex;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background: #3949AB;
+}
+.second__nav .second__nav--logo {
+  padding: 28px 0 25px 38px;
+}
+.second__nav .second__nav--links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  list-style: none;
+}
+.second__nav .second__nav--links > li {
+  padding: 20px;
+  font-size: 12px;
+}
+.second__nav .second__nav--links > li a {
+  text-decoration: none;
+  color: white;
+}
+.second__nav .second__nav--links > li .nav__links--burger {
+  height: 50px;
+  width: 50px;
+}
+
+.second__subnav {
+  margin: 60px 486px 0 338px;
+  width: 100%;
+}
+.second__subnav ul {
+  padding: 0;
+}
+.second__subnav ul li {
+  list-style: none;
+  display: inline-block;
+  font-weight: 600;
+}
+.second__subnav ul li a {
+  text-decoration: none;
+  color: #3949AB;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.86px;
+}
+.second__subnav ul li .second__subnav--page {
+  color: #424242;
+}
+.second__subnav ul li span {
+  margin: 0 10px;
+}
+
+.second__article--header {
+  height: 137px;
+  width: 767px;
+  margin: 10px 0px 0px 338px;
+}
+.second__article--header h1 {
+  color: #424242;
+  font-size: 42px;
+  margin: 18px 0 0 0;
+}
+.second__article--header .second__article--bottom {
+  margin-top: 5px;
+  height: 61px;
+  display: flex;
+  align-items: center;
+}
+.second__article--header .second__article--bottom .article__bottom--text {
+  display: flex;
+  flex-direction: column;
+  color: #424242;
+  font-size: 12px;
+  margin-left: 15px;
+  letter-spacing: 0.86px;
+}
+.second__article--header .second__article--bottom .article__bottom--text span {
+  font-weight: 800;
+}
+.second__article--header .second__article--bottom .article__bottom--text p {
+  margin: 0;
+}
+
+.second__headerimage {
+  background-image: url(../images/secondpage_long.png);
+  height: 402px;
+  width: 968px;
+  margin: 50px 0 0 236px;
+}
+
+.second__mainwrapper {
+  width: 931px;
+  margin: 50px 0 0 236px;
+}
+.second__mainwrapper h2 {
+  color: #424242;
+  font-family: "Tahoma", sans-serif;
+  margin: 0;
+  font-size: 30px;
+}
+.second__mainwrapper .second__list--links {
+  width: 1100px;
+  height: 442px;
+  display: flex;
+  border-bottom: 1px solid #dfdfdf;
+  color: #424242;
+  font-family: "RV Montserrat", sans-serif;
+  font-weight: 400;
+}
+.second__mainwrapper .second__list--links ul {
+  list-style: none;
+  padding: 0 70px 0 0;
+}
+.second__mainwrapper .second__list--links ul li {
+  padding-top: 16px;
+  color: #424242;
+}
+.second__mainwrapper .second__list--links ul li a {
+  color: #3949AB;
+  text-decoration: none;
+}
+.second__mainwrapper .second__subheading {
+  width: 670px;
+  height: 161px;
+  margin: 40px 0 0 99px;
+}
+.second__mainwrapper .second__subheading > p {
+  color: #424242;
+  margin-top: 30px;
+  font-size: 21px;
+  line-height: 33px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.second__mainwrapper .second__table {
+  color: #424242;
+  height: 348px;
+  margin: 75px 0 0 99px;
+}
+.second__mainwrapper .second__table table {
+  border: 1px solid #CCCCCC;
+  border-collapse: collapse;
+  margin-top: 42px;
+  width: 670px;
+}
+.second__mainwrapper .second__table table th {
+  background-color: #F5F5F5;
+  height: 48px;
+  width: 143px;
+}
+.second__mainwrapper .second__table table td {
+  height: 48px;
+  width: 143px;
+  text-align: center;
+  border: 1px solid #CCCCCC;
+}
+.second__mainwrapper .second__subsection--1 {
+  color: #424242;
+  width: 670px;
+  margin: 50px 0 0 99px;
+}
+.second__mainwrapper .second__subsection--1 > h3 {
+  font-size: 21px;
+  color: #757575;
+  font-weight: 200;
+  margin: 5px 0 0 0;
+}
+.second__mainwrapper .second__subsection--1 > p {
+  margin: 30px 0 0 0;
+  font-size: 21px;
+  line-height: 33px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.second__mainwrapper .second__subsection--1 figure {
+  margin: 60px 0 0 0;
+}
+.second__mainwrapper .second__subsection--1 figure figcaption {
+  text-align: center;
+  margin-top: 10px;
+}
+.second__mainwrapper .second__subsection--2 {
+  color: #424242;
+  margin: 60px 0 0 99px;
+  width: 670px;
+  font-size: 21px;
+}
+.second__mainwrapper .second__subsection--2 p {
+  margin: 0;
+  line-height: 33px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.second__mainwrapper .second__subsection--2 .subsection__2--quote {
+  font-style: italic;
+  color: #757575;
+  font-size: 28px;
+  width: 630px;
+  margin: 40px 0 40px 20px;
+  line-height: 40px;
+}
+.second__mainwrapper .second__subsection--2 ul {
+  margin: 30px 0;
+  line-height: 40px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.second__mainwrapper .second__about {
+  width: 670px;
+  height: 153px;
+  color: #424242;
+  margin: 60px 0 0 99px;
+  border-top: 1px solid #e1e1e1;
+  font-weight: 300;
+}
+.second__mainwrapper .second__about p {
+  margin: 33px 0 0 0;
+  font-size: 18px;
+  line-height: 32px;
+  font-style: italic;
+}
+.second__mainwrapper .second__about span {
+  color: #3949AB;
+}
+
+/* ==========================================================================
+   PAGE 2 ARTICLES
+   ========================================================================== */
+.related__articles {
+  color: #424242;
+  width: 1170px;
+  margin: 60px 0 100px 135px;
+}
+.related__articles > h2 {
+  margin: 0 0 30px 0;
+}
+.related__articles .related__articles--row {
+  width: 1170px;
+  height: 549px;
+  display: flex;
+  justify-content: space-between;
+  font-family: "RV Montserrat", sans-serif;
+}
+.related__articles .related__articles--row .related__articles--card {
+  box-shadow: 0px 0px 70px #c2c2c2;
+  width: 370px;
+  height: 549px;
+  transition: transform 500ms ease;
+}
+.related__articles .related__articles--row .related__articles--card:hover {
+  transform: scaleX(1.05) scaleY(1.05);
+}
+.related__articles .related__articles--row .related__articles--card .articles__card--image {
+  height: 190px;
+  width: 310px;
+  margin: 30px 30px 0px;
+}
+.related__articles .related__articles--row .related__articles--card .articles__card--text {
+  width: 318px;
+  height: 176px;
+  margin: 30px auto 0px;
+}
+.related__articles .related__articles--row .related__articles--card .articles__card--text .articles__card--pill {
+  height: 25px;
+  width: 92px;
+  background-color: white;
+  border-radius: 12px;
+  color: #3949AB;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #3949AB;
+  margin-bottom: 16px;
+}
+.related__articles .related__articles--row .related__articles--card .articles__card--text .articles__card--pill:hover {
+  background-color: #3949AB;
+  color: white;
+}
+.related__articles .related__articles--row .related__articles--card .articles__card--text h2 {
+  font-size: 26px;
+  color: #424242;
+  line-height: 34px;
+  margin: 0px 0px 10px 0px;
+}
+.related__articles .related__articles--row .related__articles--card .articles__card--text p {
+  font-size: 14px;
+  line-height: 19px;
+  color: #424242;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.related__articles .related__articles--row .related__articles--card .articles__card--bottom {
+  margin-top: 58px;
+  border-top: 1px solid #ebebeb;
+  height: 61px;
+  display: flex;
+  align-items: center;
+}
+.related__articles .related__articles--row .related__articles--card .articles__card--bottom img {
+  margin-left: 26px;
+}
+.related__articles .related__articles--row .related__articles--card .articles__card--bottom .card__bottom--text {
+  display: flex;
+  flex-direction: column;
+  color: #424242;
+  font-size: 12px;
+  margin-left: 15px;
+  letter-spacing: 0.86px;
+}
+.related__articles .related__articles--row .related__articles--card .articles__card--bottom .card__bottom--text span {
+  font-weight: 800;
+}
+.related__articles .related__articles--row .related__articles--card .articles__card--bottom .card__bottom--text p {
+  margin: 0;
+}
+
+/*# sourceMappingURL=main.css.map */
