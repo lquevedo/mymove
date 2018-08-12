@@ -702,6 +702,9 @@ footer .footer__bottomhalf > ul .footer__bottomhalf--lastitem {
 .main__article .main__article--image:hover {
   transform: scaleX(1.05) scaleY(1.05);
 }
+.main__article .main__article--image span {
+  display: none;
+}
 .main__article .main__article--content {
   width: 608px;
   height: 410px;
