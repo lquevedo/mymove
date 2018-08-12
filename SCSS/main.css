@@ -538,6 +538,9 @@ body {
   letter-spacing: 0.86px;
   font-weight: 300;
 }
+.index__nav .index__nav--links li a:hover {
+  border-bottom: 3px solid #FDD835;
+}
 .index__nav .index__nav--links li .nav__links--burger {
   height: 49px;
   width: 49px;
@@ -570,6 +573,9 @@ footer .footer__tophalf .footer__tophalf--links > ul > li {
 footer .footer__tophalf .footer__tophalf--links > ul > li a {
   text-decoration: none;
   color: white;
+}
+footer .footer__tophalf .footer__tophalf--links > ul > li a:hover {
+  border-bottom: 3px solid #FDD835;
 }
 footer .footer__tophalf .footer__social--logo {
   margin: 143px 45px 0px 0px;
@@ -604,6 +610,9 @@ footer .footer__bottomhalf > ul > li a {
   text-decoration: none;
   color: white;
 }
+footer .footer__bottomhalf > ul > li a:hover {
+  border-bottom: 2px solid #FDD835;
+}
 footer .footer__bottomhalf > ul .footer__bottomhalf--lastitem {
   border: none;
 }
@@ -628,6 +637,7 @@ footer .footer__bottomhalf > ul .footer__bottomhalf--lastitem {
   margin-bottom: 24px;
   text-transform: uppercase;
   letter-spacing: 3px;
+  font-weight: 400;
 }
 .index__hero .index__hero--text > h2 {
   font-size: 54px;
@@ -683,6 +693,13 @@ footer .footer__bottomhalf > ul .footer__bottomhalf--lastitem {
   font-size: 14px;
   margin-left: 108px;
 }
+.index__subnav .index__contactbtn:active {
+  background-color: #303F9F;
+  transform: translateY(1px);
+}
+.index__subnav .index__contactbtn:focus {
+  outline: 0;
+}
 
 .main__article {
   font-family: "RV Montserrat", sans-serif;
@@ -700,9 +717,9 @@ footer .footer__bottomhalf > ul .footer__bottomhalf--lastitem {
   transition: transform 500ms ease;
 }
 .main__article .main__article--image:hover {
-  transform: scaleX(1.05) scaleY(1.05);
+  transform: scaleX(0.9) scaleY(0.9);
 }
-.main__article .main__article--image span {
+.main__article span {
   display: none;
 }
 .main__article .main__article--content {
@@ -766,11 +783,12 @@ footer .footer__bottomhalf > ul .footer__bottomhalf--lastitem {
   height: 10px;
   color: #757575;
 }
-.main__article .main__article--content .main__article--bottom .article__bottom--text p span {
+.main__article .main__article--content .main__article--bottom .article__bottom--text span {
   font-weight: bold;
   letter-spacing: 0.86px;
   text-transform: uppercase;
   color: #424242;
+  display: block;
 }
 
 /* ==========================================================================
@@ -792,7 +810,8 @@ footer .footer__bottomhalf > ul .footer__bottomhalf--lastitem {
   transition: transform 500ms ease;
 }
 .main__articles--row .articles__row--card:hover {
-  transform: scaleX(1.05) scaleY(1.05);
+  transform: scaleX(0.9) scaleY(0.9);
+  cursor: pointer;
 }
 .main__articles--row .articles__row--card .articles__card--image {
   height: 190px;
@@ -898,6 +917,13 @@ hr {
   border-radius: 2px;
   text-transform: uppercase;
   color: white;
+}
+.hr__break .hr__button:active {
+  background-color: #303F9F;
+  transform: translateY(1px);
+}
+.hr__break .hr__button:focus {
+  outline: 0;
 }
 
 /* ==========================================================================
@@ -1098,6 +1124,10 @@ hr {
   line-height: 33px;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
+.second__mainwrapper .second__subsection--2 p a {
+  text-decoration: none;
+  color: #3949AB;
+}
 .second__mainwrapper .second__subsection--2 .subsection__2--quote {
   font-style: italic;
   color: #757575;
@@ -1154,7 +1184,8 @@ hr {
   transition: transform 500ms ease;
 }
 .related__articles .related__articles--row .related__articles--card:hover {
-  transform: scaleX(1.05) scaleY(1.05);
+  transform: scaleX(0.9) scaleY(0.9);
+  cursor: pointer;
 }
 .related__articles .related__articles--row .related__articles--card .articles__card--image {
   height: 190px;
