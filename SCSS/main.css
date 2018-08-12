@@ -581,8 +581,11 @@ footer .footer__tophalf .footer__social--links {
   height: 208px;
   margin: 75px 142px 0px 0px;
 }
-footer .footer__tophalf .footer__social--links img {
+footer .footer__tophalf .footer__social--links a img {
   padding-bottom: 16px;
+}
+footer .footer__tophalf .footer__social--links a span {
+  display: none;
 }
 footer .footer__bottomhalf > ul {
   list-style: none;
@@ -690,7 +693,7 @@ footer .footer__bottomhalf > ul .footer__bottomhalf--lastitem {
   margin: 40px 135px 0px;
 }
 .main__article .main__article--image {
-  background-image: url(../images/Bitmap.png);
+  background-image: url(../images/mainarticleimg.png);
   width: 441px;
   height: 441px;
   margin: 30px 49px 29px 30px;
@@ -930,7 +933,6 @@ hr {
 
 .second__subnav {
   margin: 60px 486px 0 338px;
-  width: 100%;
 }
 .second__subnav ul {
   padding: 0;
@@ -1003,17 +1005,16 @@ hr {
   font-size: 30px;
 }
 .second__mainwrapper .second__list--links {
-  width: 1100px;
+  width: 931px;
   height: 442px;
   display: flex;
-  border-bottom: 1px solid #dfdfdf;
+  border-bottom: 2px solid #EEEEEE;
   color: #424242;
   font-family: "RV Montserrat", sans-serif;
   font-weight: 400;
 }
 .second__mainwrapper .second__list--links ul {
   list-style: none;
-  padding: 0 70px 0 0;
 }
 .second__mainwrapper .second__list--links ul li {
   padding-top: 16px;
@@ -1080,6 +1081,8 @@ hr {
 .second__mainwrapper .second__subsection--1 figure figcaption {
   text-align: center;
   margin-top: 10px;
+  font-size: 12px;
+  color: #757575;
 }
 .second__mainwrapper .second__subsection--2 {
   color: #424242;
