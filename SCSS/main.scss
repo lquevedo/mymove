@@ -207,6 +207,7 @@ footer {
         color: white;
         font-size: 14px;
         margin-left: 108px;
+        text-transform: uppercase;
         &:active {
             background-color: $secondblue;
             transform: translateY(1px);
@@ -471,13 +472,15 @@ hr {
             a {
                 text-decoration: none;
                 color: white;
+                letter-spacing: 0.86px;
+                font-weight: 300;
                 &:hover{
                     border-bottom: 3px solid $mainyellow;
                 }
             }
             .nav__links--burger {
-                height: 50px;
-                width: 50px;
+                height: 49px;
+                width: 49px;
             }
         }
     }
