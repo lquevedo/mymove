@@ -692,6 +692,7 @@ footer .footer__bottomhalf > ul .footer__bottomhalf--lastitem {
   color: white;
   font-size: 14px;
   margin-left: 108px;
+  text-transform: uppercase;
 }
 .index__subnav .index__contactbtn:active {
   background-color: #303F9F;
@@ -954,13 +955,15 @@ hr {
 .second__nav .second__nav--links > li a {
   text-decoration: none;
   color: white;
+  letter-spacing: 0.86px;
+  font-weight: 300;
 }
 .second__nav .second__nav--links > li a:hover {
   border-bottom: 3px solid #FDD835;
 }
 .second__nav .second__nav--links > li .nav__links--burger {
-  height: 50px;
-  width: 50px;
+  height: 49px;
+  width: 49px;
 }
 
 .second__subnav {
