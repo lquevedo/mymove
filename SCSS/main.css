@@ -709,17 +709,17 @@ footer .footer__bottomhalf > ul .footer__bottomhalf--lastitem {
   display: flex;
   margin: 40px 135px 0px;
 }
-.main__article .main__article--image {
+.main__article a .main__article--image {
   background-image: url(../images/mainarticleimg.png);
   width: 441px;
   height: 441px;
   margin: 30px 49px 29px 30px;
   transition: transform 500ms ease;
 }
-.main__article .main__article--image:hover {
+.main__article a .main__article--image:hover {
   transform: scaleX(0.9) scaleY(0.9);
 }
-.main__article span {
+.main__article a p {
   display: none;
 }
 .main__article .main__article--content {
@@ -955,6 +955,9 @@ hr {
   text-decoration: none;
   color: white;
 }
+.second__nav .second__nav--links > li a:hover {
+  border-bottom: 3px solid #FDD835;
+}
 .second__nav .second__nav--links > li .nav__links--burger {
   height: 50px;
   width: 50px;
@@ -1052,6 +1055,9 @@ hr {
 .second__mainwrapper .second__list--links ul li a {
   color: #3949AB;
   text-decoration: none;
+}
+.second__mainwrapper .second__list--links ul li a:hover {
+  border-bottom: 2px solid #303F9F;
 }
 .second__mainwrapper .second__subheading {
   width: 670px;
