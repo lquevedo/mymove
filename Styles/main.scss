@@ -1,0 +1,17 @@
+@import "normalizer.scss";
+@import "./partials/index";
+@import "./partials/nav-bars";
+@import "./partials/second-page";
+@import "./partials/button-sides";
+@import "./partials/footer";
+@import "./partials/variables";
+@import "./partials/mixins";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: white;
+}

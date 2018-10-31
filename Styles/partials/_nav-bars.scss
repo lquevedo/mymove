@@ -1,0 +1,81 @@
+@import "variables";
+@import "mixins";
+
+.index-nav {
+  @include dimensions(90px, 1440px);
+  display: flex;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  position: absolute;
+  font-family: $mainfont;
+  &__logo {
+    padding: 28px 0 25px 38px;
+  }
+  &__links {
+    @include flex(flex, flex-end, center);
+    width: 100%;
+    list-style: none;
+    &--burger {
+      @include dimensions(49px, 49px);
+    }
+    li {
+      padding: 20px;
+      font-size: 12px;
+      a {
+        text-decoration: none;
+        color: white;
+        letter-spacing: 0.86px;
+        font-weight: 300;
+        &::after {
+          @include dimensions(2px, 0);
+          content: "";
+          display: block;
+          background: white;
+          transition: width 0.2s;
+        }
+        &:hover::after {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.page2-nav {
+  @include dimensions(90px, 1440px);
+  display: flex;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background: $mainblue;
+  &__logo {
+    padding: 28px 0 25px 38px;
+  }
+  &__links {
+    @include flex(flex, flex-end, center);
+    width: 100%;
+    list-style: none;
+    &--burger {
+      @include dimensions(49px, 49px);
+    }
+    > li {
+      padding: 20px;
+      font-size: 12px;
+      a {
+        text-decoration: none;
+        color: white;
+        letter-spacing: 0.86px;
+        font-weight: 300;
+        &::after {
+          @include dimensions(2px, 0);
+          content: "";
+          display: block;
+          background: white;
+          transition: width 0.2s;
+        }
+        &:hover::after {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

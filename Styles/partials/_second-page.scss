@@ -1,0 +1,288 @@
+@import "variables";
+@import "mixins";
+
+.page2-subnav {
+  margin: 60px 486px 0 338px;
+  &__page {
+    color: $maingrey;
+  }
+  ul {
+    padding: 0;
+    li {
+      list-style: none;
+      display: inline-block;
+      font-weight: 600;
+      a {
+        text-decoration: none;
+        color: $mainblue;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.86px;
+      }
+      span {
+        margin: 0 10px;
+      }
+    }
+  }
+}
+
+.page2-article {
+  &__header {
+    @include dimensions(137px, 767px);
+    margin: 10px 0px 0px 338px;
+    h1 {
+      color: $maingrey;
+      font-size: 42px;
+      margin: 18px 0 0 0;
+    }
+  }
+  &__bottom {
+    @include dimensions(61px, 100%);
+    @include flex(flex, none, center);
+    margin-top: 5px;
+    margin-left: 335px;
+    &--text {
+      display: flex;
+      flex-direction: column;
+      color: $maingrey;
+      font-size: 12px;
+      margin-left: 15px;
+      letter-spacing: 0.86px;
+      span {
+        font-weight: 800;
+      }
+      p {
+        margin: 0;
+      }
+    }
+  }
+}
+
+.page2-headerimage {
+  @include dimensions(402px, 968px);
+  background-image: url(../images/secondpage_long.png);
+  margin: 50px 0 0 236px;
+}
+
+.page2-mainwrapper {
+  width: 931px;
+  margin: 50px 0 0 236px;
+  h2 {
+    color: $maingrey;
+    font-family: $secondfont;
+    margin: 0;
+    font-size: 30px;
+  }
+}
+
+.page2-list__links {
+  @include dimensions(442px, 931px);
+  display: flex;
+  border-bottom: 2px solid #eeeeee;
+  color: $maingrey;
+  font-family: $mainfont;
+  font-weight: 400;
+  ul {
+    list-style: none;
+    li {
+      padding-top: 16px;
+      color: $maingrey;
+      a {
+        color: $mainblue;
+        text-decoration: none;
+        &:hover {
+          border-bottom: 2px solid $secondblue;
+        }
+      }
+    }
+  }
+}
+
+.page2-subheading {
+  @include dimensions(161px, 670px);
+  margin: 40px 0 0 99px;
+  > p {
+    color: $maingrey;
+    margin-top: 30px;
+    font-size: 21px;
+    line-height: 33px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
+}
+
+.page2-table {
+  @include dimensions(348px, 100%);
+  color: $maingrey;
+  margin: 75px 0 0 99px;
+  table {
+    border: 1px solid #cccccc;
+    border-collapse: collapse;
+    margin-top: 42px;
+    width: 670px;
+    th {
+      @include dimensions(48px, 143px);
+      background-color: #f5f5f5;
+    }
+    td {
+      @include dimensions(48px, 143px);
+      text-align: center;
+      border: 1px solid #cccccc;
+    }
+  }
+}
+
+.page2-subsection__1 {
+  color: $maingrey;
+  width: 670px;
+  margin: 50px 0 0 99px;
+  > h3 {
+    font-size: 21px;
+    color: #757575;
+    font-weight: 200;
+    margin: 5px 0 0 0;
+  }
+  > p {
+    margin: 30px 0 0 0;
+    font-size: 21px;
+    line-height: 33px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
+  figure {
+    margin: 60px 0 0 0;
+    figcaption {
+      text-align: center;
+      margin-top: 10px;
+      font-size: 12px;
+      color: #757575;
+    }
+  }
+}
+
+.page2-subsection__2 {
+  color: $maingrey;
+  margin: 60px 0 0 99px;
+  width: 670px;
+  font-size: 21px;
+  &--quote {
+    font-style: italic;
+    color: #757575;
+    font-size: 28px;
+    width: 630px;
+    margin: 40px 0 40px 20px;
+    line-height: 40px;
+  }
+  p {
+    margin: 0;
+    line-height: 33px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    a {
+      text-decoration: none;
+      color: $mainblue;
+    }
+  }
+  ul {
+    margin: 30px 0;
+    line-height: 40px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
+}
+.page2-about {
+  @include dimensions(153px, 670px);
+  color: $maingrey;
+  margin: 60px 0 0 99px;
+  border-top: 1px solid rgb(225, 225, 225);
+  font-weight: 300;
+  p {
+    margin: 33px 0 0 0;
+    font-size: 18px;
+    line-height: 32px;
+    font-style: italic;
+  }
+  span {
+    color: $mainblue;
+  }
+}
+
+/* ==========================================================================
+   PAGE 2 ARTICLES
+   ========================================================================== */
+
+.related-articles {
+  color: $maingrey;
+  width: 1170px;
+  margin: 60px 0 100px 135px;
+  > h2 {
+    margin: 0 0 30px 0;
+  }
+  &__row {
+    @include dimensions(549px, 1170px);
+    @include flex(flex, space-between, none);
+    font-family: $mainfont;
+  }
+  &__card {
+    @include dimensions(549px, 370px);
+    box-shadow: 0px 0px 70px #c2c2c2;
+    transition: transform 500ms ease;
+    &:hover {
+      transform: scaleX(0.9) scaleY(0.9);
+      cursor: pointer;
+    }
+    &--image {
+      @include dimensions(190px, 310px);
+      margin: 30px 30px 0px;
+    }
+    &--text {
+      @include dimensions(176px, 318px);
+      margin: 30px auto 0px;
+      h2 {
+        font-size: 26px;
+        color: $maingrey;
+        line-height: 34px;
+        margin: 0px 0px 10px 0px;
+      }
+      p {
+        font-size: 14px;
+        line-height: 19px;
+        color: $maingrey;
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
+    }
+    &--pill {
+      @include dimensions(25px, 92px);
+      @include flex(flex, center, center);
+      background-color: white;
+      border-radius: 12px;
+      color: $mainblue;
+      font-size: 12px;
+      border: 1px solid $mainblue;
+      margin-bottom: 16px;
+      &:hover {
+        background-color: $mainblue;
+        color: white;
+      }
+    }
+    &__bottom {
+      @include flex(flex, none, center);
+      margin-top: 58px;
+      border-top: 1px solid #ebebeb;
+      height: 61px;
+      img {
+        margin-left: 26px;
+      }
+      &--text {
+        display: flex;
+        flex-direction: column;
+        color: $maingrey;
+        font-size: 12px;
+        margin-left: 15px;
+        letter-spacing: 0.86px;
+        span {
+          font-weight: 800;
+        }
+        p {
+          margin: 0;
+        }
+      }
+    }
+  }
+}

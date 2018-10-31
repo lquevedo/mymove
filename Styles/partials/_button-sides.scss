@@ -1,0 +1,37 @@
+@import "variables";
+@import "mixins";
+
+hr {
+  @include dimensions(1px, 1171px);
+  position: absolute;
+  margin: 100px 0px 0px 135px;
+  background: rgba(238, 238, 238, 100%);
+  border: 0;
+}
+
+.hr__break {
+  @include dimensions(48px, 369px);
+  position: relative;
+  margin: 76px auto 94px;
+  background: white;
+  font-family: $mainfont;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.24px;
+  &--button {
+    @include dimensions(48px, 249px);
+    @include flex(flex, center, center);
+    background-color: $lightblue;
+    margin: 0 auto;
+    border-radius: 2px;
+    text-transform: uppercase;
+    color: white;
+    &:active {
+      background-color: $secondblue;
+      transform: translateY(1px);
+    }
+    &:focus {
+      outline: 0;
+    }
+  }
+}
