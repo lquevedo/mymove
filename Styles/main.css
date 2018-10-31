@@ -503,13 +503,13 @@ table {
   background: linear-gradient(rgba(63, 81, 181, 0.9), rgba(63, 81, 181, 0.9)), url("../images/hero.png");
   font-family: "RV Montserrat", sans-serif;
 }
-.index-hero .index-hero--text {
+.index-hero--text {
   height: 161px;
   width: 100%;
   text-align: center;
   padding-top: 110px;
 }
-.index-hero .index-hero--text > h1 {
+.index-hero--text > h1 {
   font-size: 18px;
   color: #fdd835;
   margin-bottom: 24px;
@@ -517,12 +517,12 @@ table {
   letter-spacing: 3px;
   font-weight: 400;
 }
-.index-hero .index-hero--text > h2 {
+.index-hero--text > h2 {
   font-size: 54px;
   margin: 0;
   font-weight: bold;
 }
-.index-hero .index-hero--text > p {
+.index-hero--text > p {
   font-size: 16px;
   margin-top: 33px;
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -581,7 +581,7 @@ table {
   outline: 0;
 }
 
-.main__article {
+.main-article {
   height: 500px;
   width: 1170px;
   font-family: "RV Montserrat", sans-serif;
@@ -589,39 +589,39 @@ table {
   display: flex;
   margin: 40px 135px 0px;
 }
-.main__article > img {
+.main-article > img {
   height: 441px;
   width: 441px;
   background-image: url("../images/mainarticleimg.png");
   margin: 30px 49px 29px 30px;
   transition: transform 500ms ease;
 }
-.main__article > img:hover {
+.main-article > img:hover {
   transform: scaleX(0.9) scaleY(0.9);
 }
-.main__article .main__article--content {
+.main-article--content {
   height: 410px;
   width: 608px;
   color: black;
 }
-.main__article .main__article--content a {
+.main-article--content a {
   text-decoration: none;
   color: black;
 }
-.main__article .main__article--content a :hover {
+.main-article--content a :hover {
   color: #536dfe;
 }
-.main__article .main__article--content a h2 {
+.main-article--content a h2 {
   font-size: 42px;
   width: 536px;
 }
-.main__article .main__article--content > p {
+.main-article--content > p {
   font-family: Georgia, "Times New Roman", Times, serif;
   line-height: 30px;
   font-size: 18px;
   margin: 0;
 }
-.main__article .main__article--content .main__article--pill {
+.main-article--pill {
   height: 25px;
   width: 92px;
   display: flex;
@@ -634,11 +634,11 @@ table {
   border: 1px solid #3949ab;
   margin: 60px 0 15px 0;
 }
-.main__article .main__article--content .main__article--pill:hover {
+.main-article--pill:hover {
   background-color: #3949ab;
   color: white;
 }
-.main__article .main__article--content .main__article--bottom {
+.main-article--bottom {
   height: 70px;
   width: 100%;
   display: flex;
@@ -648,21 +648,21 @@ table {
   border-top: 1px solid #ebebeb;
   padding-top: 25px;
 }
-.main__article .main__article--content .main__article--bottom .article__bottom--text {
+.main-article--bottom--text {
   display: flex;
   flex-direction: column;
   color: #424242;
   font-size: 12px;
   margin-left: 15px;
 }
-.main__article .main__article--content .main__article--bottom .article__bottom--text > p {
+.main-article--bottom--text > p {
   margin: 0 0 10px 0;
   font-size: 12px;
   line-height: 24px;
   height: 10px;
   color: #757575;
 }
-.main__article .main__article--content .main__article--bottom .article__bottom--text span {
+.main-article--bottom--text span {
   font-weight: bold;
   letter-spacing: 0.86px;
   text-transform: uppercase;
@@ -670,7 +670,7 @@ table {
   display: block;
 }
 
-.main__articles--row {
+.articles-row {
   height: 549px;
   width: 1170px;
   display: flex;
@@ -680,27 +680,40 @@ table {
   margin-left: 135px;
   margin-top: 30px;
 }
-.main__articles--row .articles__row--card {
+.articles-row__card {
   height: 100%;
   width: 370px;
   box-shadow: 0px 0px 70px #c2c2c2;
   transition: transform 500ms ease;
 }
-.main__articles--row .articles__row--card:hover {
+.articles-row__card:hover {
   transform: scaleX(0.9) scaleY(0.9);
   cursor: pointer;
 }
-.main__articles--row .articles__row--card .articles__card--image {
+.articles-row__card--image {
   height: 190px;
   width: 310px;
   margin: 30px 30px 0px;
 }
-.main__articles--row .articles__row--card .articles__card--text {
+.articles-row__card--text {
   height: 176px;
   width: 318px;
   margin: 30px auto 0px;
 }
-.main__articles--row .articles__row--card .articles__card--text .articles__card--pill {
+.articles-row__card--text h2 {
+  width: 308px;
+  font-size: 26px;
+  color: #424242;
+  margin: 0px 0px 10px 0px;
+  line-height: 34px;
+}
+.articles-row__card--text p {
+  font-size: 14px;
+  color: #424242;
+  line-height: 19px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.articles-row__card--pill {
   height: 25px;
   width: 92px;
   display: flex;
@@ -713,24 +726,11 @@ table {
   border: 1px solid #3949ab;
   margin-bottom: 16px;
 }
-.main__articles--row .articles__row--card .articles__card--text .articles__card--pill:hover {
+.articles-row__card--pill:hover {
   background-color: #3949ab;
   color: white;
 }
-.main__articles--row .articles__row--card .articles__card--text h2 {
-  width: 308px;
-  font-size: 26px;
-  color: #424242;
-  margin: 0px 0px 10px 0px;
-  line-height: 34px;
-}
-.main__articles--row .articles__row--card .articles__card--text p {
-  font-size: 14px;
-  color: #424242;
-  line-height: 19px;
-  font-family: Georgia, "Times New Roman", Times, serif;
-}
-.main__articles--row .articles__row--card .articles__card--bottom {
+.articles-row__card__bottom {
   height: 61px;
   width: 100%;
   display: flex;
@@ -739,10 +739,10 @@ table {
   margin-top: 58px;
   border-top: 1px solid #eeeeee;
 }
-.main__articles--row .articles__row--card .articles__card--bottom img {
+.articles-row__card__bottom img {
   margin-left: 26px;
 }
-.main__articles--row .articles__row--card .articles__card--bottom .articles__bottom--text {
+.articles-row__card__bottom--text {
   height: 50px;
   width: 100%;
   display: flex;
@@ -751,14 +751,14 @@ table {
   font-size: 12px;
   margin: 20px 0 0 15px;
 }
-.main__articles--row .articles__row--card .articles__card--bottom .articles__bottom--text > span {
+.articles-row__card__bottom--text > span {
   font-weight: bold;
   letter-spacing: 0.86px;
   text-transform: uppercase;
   color: #424242;
   margin: 0;
 }
-.main__articles--row .articles__row--card .articles__card--bottom .articles__bottom--text p {
+.articles-row__card__bottom--text p {
   font-size: 12px;
   color: #757575;
   margin: 0;
