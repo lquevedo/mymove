@@ -589,18 +589,15 @@ table {
   display: flex;
   margin: 40px 135px 0px;
 }
-.main__article a .main__article--image {
+.main__article > img {
   height: 441px;
   width: 441px;
   background-image: url("../images/mainarticleimg.png");
   margin: 30px 49px 29px 30px;
   transition: transform 500ms ease;
 }
-.main__article a .main__article--image:hover {
+.main__article > img:hover {
   transform: scaleX(0.9) scaleY(0.9);
-}
-.main__article a p {
-  display: none;
 }
 .main__article .main__article--content {
   height: 410px;
